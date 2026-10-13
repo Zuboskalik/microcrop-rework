@@ -1,0 +1,98 @@
+{
+  "app": {
+    "tagline": "Store covers and icons for game platforms — right in your browser",
+    "localFirst": "Your images never leave your device",
+    "showSafeZones": "Safe Zones",
+    "language": "Language"
+  },
+  "filter": {
+    "all": "All platforms",
+    "yandex_games": "Yandex Games",
+    "telegram": "Telegram",
+    "vk_play": "VK Play",
+    "rustore": "RuStore"
+  },
+  "dropzone": {
+    "title": "Drop your master art here",
+    "hint": "or click to choose a file · PNG, JPG, WebP · 2000 px+ on the short side recommended",
+    "replace": "Replace art",
+    "invalid": "Could not read the image. PNG, JPG and WebP are supported.",
+    "lowRes": "Source is smaller than {size} px — some presets will be upscaled."
+  },
+  "card": {
+    "limit": "limit {kb} KB",
+    "format": "Format",
+    "zoom": "Zoom",
+    "reset": "Reset crop",
+    "download": "Download",
+    "downloadFree": "Download with watermark",
+    "dragHint": "Drag to move, mouse wheel to zoom",
+    "result": "{size} · Q{quality}",
+    "resultPng8": "{size} · PNG-8 (256 colors)",
+    "resultPng": "{size} · PNG-32",
+    "overBudget": "Over the size limit — try WebP or reduce detail",
+    "rounded": "Corner radius {pct}%"
+  },
+  "export": {
+    "zip": "Download watermark-free .zip",
+    "zipPaywall": "Download the watermark-free archive (190 ₽ for 48h)",
+    "progress": "Processing {done} / {total}…",
+    "noSource": "Upload master art first",
+    "freeNote": "Free: one file at a time with a microcrop.ru watermark",
+    "proNote": "Pro until {date}: no watermarks, batch .zip",
+    "errors": {
+      "license_required": "Batch export requires Pro access",
+      "license_invalid": "License could not be verified. Reload the page and try again",
+      "license_expired": "Export config has expired — please retry",
+      "bad_request": "Invalid export request",
+      "render_failed": "Failed to render the frame",
+      "encode_failed": "This browser could not encode the image",
+      "network": "Server is unavailable, please try later"
+    }
+  },
+  "auth": {
+    "login": "Sign in",
+    "logout": "Sign out",
+    "telegram": "Sign in with Telegram",
+    "yandex": "Sign in with Yandex ID",
+    "dev": "Dev sign-in (local)",
+    "required": "Sign in to purchase access — it will be linked to your account.",
+    "notConfigured": "Telegram / Yandex sign-in is not configured on this server.",
+    "failed": "Sign-in failed. Please try again."
+  },
+  "paywall": {
+    "title": "MicroCrop Pro",
+    "subtitle": "Watermark-free batch .zip for every preset. Pay with SBP (Russian Faster Payments).",
+    "plans": {
+      "pass_48h": "Release pass · 48 hours",
+      "pro_30d": "Pro · 30 days",
+      "pro_365d": "Pro · 365 days"
+    },
+    "pay": "Pay {amount} ₽ via SBP",
+    "scan": "Scan the QR code with your phone camera or banking app",
+    "openBank": "Open in banking app",
+    "waiting": "Waiting for payment confirmation…",
+    "succeeded": "Payment received! Preparing your archive…",
+    "canceled": "Payment was canceled. You can try again.",
+    "error": "Could not create the payment. Please try later.",
+    "close": "Close",
+    "back": "Back"
+  },
+  "sz": {
+    "ya_badge": "Rating / New badge",
+    "ya_bottom_radius": "Bottom edge corner rounding",
+    "ya_top_bars": "Catalog top bars",
+    "ya_bottom_grad": "Title gradient and button",
+    "ya_top_badges": "Top badges",
+    "ya_bottom_ui": "Bottom UI area",
+    "tg_launch_btn": "Launch button / description",
+    "vk_margin": "Edge margin (10%)"
+  },
+  "presets": {
+    "ya_icon": "Yandex Games — Icon",
+    "ya_cover_horizontal": "Yandex Games — Cover (Landscape)",
+    "ya_cover_vertical": "Yandex Games — Cover (Mobile)",
+    "tg_miniapp_promo": "Telegram Mini App — Bot promo (BotFather)",
+    "vk_play_catalog": "VK Play — Catalog cover (16:9)"
+  }
+}
