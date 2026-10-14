@@ -37,7 +37,7 @@
 
 ### Backend (Laravel API + SEO Shell)
 
-* **Framework:** `PHP 8.3+` + `Laravel 11` (минималистичная структура без лишних провайдеров).
+* **Framework:** `PHP 8.3+` + `Laravel 12` (минималистичная структура без лишних провайдеров).
 * **Database:** `SQLite` в режиме `WAL` (`database/database.sqlite`, нативная поддержка в Laravel, потребление ОЗУ менее 40 МБ, нулевая нагрузка на CPU).
 
 
@@ -433,7 +433,7 @@ $$T_{\text{new}} = \max(\text{now\_ms}(), T_{\text{current}}) + \Delta t$$
 
 
 4. **План реализации MVP (порядок шагов для агента):**
-* **Шаг 1:** Настроить Laravel 11 + SQLite (`WAL`), миграции `users` и `payments`, Vite-конфигурацию для Vue 3 + TypeScript + Tailwind CSS и файл пресетов `resources/js/shared/presets.ts`.
+* **Шаг 1:** Настроить Laravel 12 + SQLite (`WAL`), миграции `users` и `payments`, Vite-конфигурацию для Vue 3 + TypeScript + Tailwind CSS и файл пресетов `resources/js/shared/presets.ts`.
 
 
 * **Шаг 2:** Реализовать Web Worker (`promoProcessor.worker.ts`) с алгоритмами `cropAndRender.ts` (включая рендер водяного знака для Free-тарифа), `smartCompressor.ts` (авто-подгон под `maxSizeKb`) и упаковкой в `.zip` через `fflate`, покрыв логику unit-тестами на `Vitest`.
@@ -449,6 +449,7 @@ $$T_{\text{new}} = \max(\text{now\_ms}(), T_{\text{current}}) + \Delta t$$
 ## 9. Заметки по реализации v0.1 (актуальное состояние кода)
 
 * **Локальный запуск и проверка:** см. `LOCAL_SETUP.md`.
+* **Версия фреймворка:** проект переведен с Laravel 11 (указан в исходной спецификации `CLAUDE.md — Спецификация MVP 2.md`) на **Laravel 12** — у 11-й ветки закончилась поддержка исправлений безопасности. Структура приложения не изменилась.
 * **Дополнительные файлы сверх дерева из §3** (без них MVP не собрать):
   * `resources/js/App.vue` — корневой компонент воркспейса; `components/auth/LoginButtons.vue` — Telegram Login Widget, Яндекс ID и dev-вход.
   * `resources/js/shared/api.ts` (клиент Laravel API), `shared/workerClient.ts` (обертка над воркером + скачивание с `revokeObjectURL`), `shared/yandexAuth.ts` (OAuth-редирект и проверка `state`).
